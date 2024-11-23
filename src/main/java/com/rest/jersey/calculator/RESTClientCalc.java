@@ -33,5 +33,8 @@ public class RESTClientCalc {
 				.request().accept(MediaType.APPLICATION_JSON).get(String.class));
 		System.out.println(webTarget.path("calc").queryParam("a", "8").queryParam("b", "4").queryParam("op", "div")
 				.request().accept(MediaType.APPLICATION_JSON).get(String.class));
+		System.out.println(webTarget.path("calc").queryParam("a", "40").queryParam("b", "21").queryParam("op", "r")
+				.request().accept(MediaType.APPLICATION_JSON).get(String.class));
+		
 	}
 }
